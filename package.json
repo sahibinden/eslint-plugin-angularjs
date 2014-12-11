@@ -1,0 +1,40 @@
+{
+  "name": "eslint-plugin-angularjs",
+  "version": "1.0.0",
+  "description": "ESLint plugin for AngularJS Best Practices",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/sahibinden/eslint-plugin-angularjs"
+  },
+  "homepage": "http://github.com/sahibinden/eslint-plugin-angularjs",
+  "bugs": "http://github.com/sahibinden/eslint-plugin-angularjs/issues",
+  "dependencies": { },
+  "peerDependencies": {
+    "eslint": ">=0.8.0"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run unit-test --coverage && npm run check-coverage",
+    "lint": "eslint ./lib",
+    "unit-test": "istanbul test --dir build/coverage ./node_modules/mocha/bin/_mocha tests/**/*.js -- --recursive --reporter dot",
+    "check-coverage": "istanbul check-coverage --statement 100 --branch 100 --function 100 --lines 100",
+    "report-coverage-html": "istanbul report --dir  build/coverage html"
+  },
+  "devDependencies": {
+    "istanbul": "0.3.0",
+    "mocha": "1.21.4",
+    "eslint-tester": "^0.3.0",
+    "eslint": ">=0.8.1"
+  },
+  "author": {
+    "name": "sahibinden",
+    "email": "labs@sahibinden.com",
+    "url": "https://github.com/sahibinden"
+  },
+  "license": "Apache 2.0",
+  "keywords": [
+    "eslint-plugin",
+    "angularjs",
+    "testing"
+  ]
+}
