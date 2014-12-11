@@ -2,7 +2,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-var eslint = require("eslint"),
+var eslint = require("eslint").linter,
     ESLintTester = require("eslint-tester");
 
 //------------------------------------------------------------------------------
