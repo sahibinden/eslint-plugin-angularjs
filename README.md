@@ -7,4 +7,4 @@ ESLint plugin for AngularJS Best Practices
 
 ## Rules
 
-* [ng-controller-inject-restrict](docs/rules/ng-controller-inject-restrict.md)
+* [ng-controller-inject-restrict](doc/rules/ng-controller-inject-restrict.md)
